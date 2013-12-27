@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>diveintonode_site Documentation</title>
-    <meta name="keywords" content="diveintonode_site" />
-    <meta name="description" content="Diveintonode Site" />
+    <title>深入浅出Node.js Documentation</title>
+    <meta name="keywords" content="深入浅出Node.js" />
+    <meta name="description" content="《深入浅出Node.js》一书配套站点" />
     <script src="assets/prettify.js"></script>
     <script src="assets/jquery-1.8.2.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
@@ -16,7 +16,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="./index.html">diveintonode_site</a>
+          <a class="brand" href="./index.html">深入浅出Node.js</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
             
@@ -28,9 +28,9 @@
     </div>
     <header class="jumbotron subhead">
       <div class="container">
-        <h1>diveintonode_site <small>Version: 0.0.1 By @Jackson Tian</small></h1>
+        <h1>深入浅出Node.js <small>Version: 0.0.1 By @Jackson Tian</small></h1>
         <p class="lead">
-          Diveintonode Site
+          《深入浅出Node.js》一书配套站点
         </p>
       </div>
     </header>
@@ -39,13 +39,52 @@
   	<div class="span3 bs-docs-sidebar">
       <ul class="nav nav-list bs-docs-sidenav affix">
 
+  <li class="level_2">
+    <a href="#index_简介" title="简介">
+      <i class="icon-chevron-right"></i>简介
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_堪误" title="堪误">
+      <i class="icon-chevron-right"></i>堪误
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_相关源码" title="相关源码">
+      <i class="icon-chevron-right"></i>相关源码
+    </a>
+  </li>
+
 </ul>
 
     </div>
     <div class="span9">
       <section>
-        <h1>diveintonode_site</h1>
-<p>《深入浅出Node.js》书稿配套网站</p>
+        <h1 id="-node-js-">《深入浅出Node.js》配套网站</h1>
+<h2 id="-">简介</h2>
+<p><img src="http://img5.douban.com/lpic/s27134708.jpg" alt="深入浅出Node.js"></p>
+<ul>
+<li><a href="http://book.douban.com/subject/25768396/">豆瓣主页</a>，简介、书评、购买链接请前往。</li>
+<li><a href="http://www.ituring.com.cn/book/1290">图灵主页</a>，预览章节，请前往。</li>
+</ul>
+<p>同名专栏请前往InfoQ浏览<a href="http://www.infoq.com/cn/master-nodejs">http://www.infoq.com/cn/master-nodejs</a></p>
+<h2 id="-">堪误</h2>
+<ul>
+<li>序一。只有你爱好技术 -&gt; 只要你爱好技术</li>
+<li>30页的<code>binding.gyp</code>，<code>sources</code>的值应该是<code>src/hello.cc</code></li>
+<li>@吕耿敏 95页中间等价代码段中<code>fs.readFile(&quot;file1.txt&quot;)</code>嵌套中的<code>fs.readFile</code>应该是<code>file2.txt</code>，不是<code>file1.txt</code></li>
+<li>56页，tick图，左边还有连线</li>
+<li>84页，倒数第二行<code>err</code> -&gt; <code>data</code></li>
+<li>85页，<code>promise.resolve(result);</code> -&gt; <code>deferred.resolve(result);</code> <code>promise.reject(err);</code> -&gt; <code>deferred.reject(err);</code></li>
+<li>147页，取消掉。。。前的注释</li>
+<li>317页，方法命名处，方法名尽量采用动词或判断性词汇 行 -&gt; 性</li>
+<li>122页，图5-9上的locol是错误的，应该是<code>local</code>。一共两处。</li>
+<li>143页，<code>trunk</code> -&gt; <code>chunk</code></li>
+</ul>
+<h2 id="-">相关源码</h2>
+<p>请访问<a href="https://github.com/JacksonTian/diveintonode_examples">https://github.com/JacksonTian/diveintonode_examples</a>查看相关源码。</p>
 
       </section>
   
