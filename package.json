@@ -1,7 +1,7 @@
 {
-  "name": "diveintonode_site",
+  "name": "深入浅出Node.js",
   "version": "0.0.1",
-  "description": "Diveintonode Site",
+  "description": "《深入浅出Node.js》一书配套站点",
   "main": "index.js",
   "directories": {
     "doc": "doc"
