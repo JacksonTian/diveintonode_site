@@ -20,6 +20,7 @@
 - 317页，方法命名处，方法名尽量采用动词或判断性词汇 行 -> 性
 - 122页，图5-9上的locol是错误的，应该是`local`。一共两处。
 - 143页，`trunk` -> `chunk`
+- 177页，Structs 应该是 Struts
 - 188页，`store.get(id, function(err, sesson){` 参数名错误 应为`session`
 
 ## 相关源码
