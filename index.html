@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>深入浅出Node.js Documentation</title>
-    <meta name="keywords" content="深入浅出Node.js" />
+    <title>diveintonode Documentation</title>
+    <meta name="keywords" content="diveintonode" />
     <meta name="description" content="《深入浅出Node.js》一书配套站点" />
     <script src="assets/prettify.js"></script>
     <script src="assets/jquery-1.8.2.min.js"></script>
@@ -13,30 +13,38 @@
     <link rel="stylesheet" type="text/css" href="assets/base.css" />
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="brand" href="./index.html">深入浅出Node.js</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-            
-            
-            </ul>
-          </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">diveintonode</a>
         </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          
+          
+          </ul>
+        </div><!-- /.navbar-collapse -->
       </div>
-    </div>
+    </nav>
     <header class="jumbotron subhead">
       <div class="container">
-        <h1>深入浅出Node.js <small>Version: 0.0.1 By @Jackson Tian</small></h1>
+        <h1>diveintonode <small>Version: 0.0.1 By @Jackson Tian</small></h1>
         <p class="lead">
           《深入浅出Node.js》一书配套站点
         </p>
       </div>
     </header>
+
 <div class="container content">
   <div class="row">
-  	<div class="span3 bs-docs-sidebar">
+  	<div class="col-md-3">
       <ul class="nav nav-list bs-docs-sidenav affix">
 
   <li class="level_2">
@@ -60,7 +68,7 @@
 </ul>
 
     </div>
-    <div class="span9">
+    <div class="col-md-9">
       <section>
         <h1 id="-node-js-">《深入浅出Node.js》配套网站</h1>
 <h2 id="-">简介</h2>
@@ -82,6 +90,7 @@
 <li>317页，方法命名处，方法名尽量采用动词或判断性词汇 行 -&gt; 性</li>
 <li>122页，图5-9上的locol是错误的，应该是<code>local</code>。一共两处。</li>
 <li>143页，<code>trunk</code> -&gt; <code>chunk</code></li>
+<li>177页，Structs 应该是 Struts</li>
 <li>188页，<code>store.get(id, function(err, sesson){</code> 参数名错误 应为<code>session</code></li>
 </ul>
 <h2 id="-">相关源码</h2>
@@ -138,7 +147,7 @@
           if (!node.attr("id")) {
             node.attr("id", "index_" + node.text());
           }
-          node.css("paddingTop", 40);
+          node.css("paddingTop", 50);
         });
       });
     </script>
