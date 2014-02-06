@@ -27,6 +27,7 @@
 - 188页，`store.get(id, function(err, sesson){` 参数名错误 应为`session`
 - 232页，最后一段中文文字，第二行："这里的文件名为bagpipe.js"应该为"这里的文件名为bigpipe.js"。
 - 233页，`<title>Bagpipe示例</title>`应该为`<title>Bigpipe示例</title>`
+- 228、229页，代码中的`fs.join`应该为`path.join`。
 
 ## 相关源码
 请访问<https://github.com/JacksonTian/diveintonode_examples>查看相关源码。
