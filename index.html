@@ -9,7 +9,6 @@
     <script src="assets/jquery-1.8.2.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-responsive.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/base.css" />
   </head>
   <body>
@@ -70,36 +69,38 @@
     </div>
     <div class="col-md-9">
       <section>
-        <h1>《深入浅出Node.js》配套网站</h1>
-<h2>简介</h2>
+        <h1 id="-node-js-">《深入浅出Node.js》配套网站</h1>
+<h2 id="-">简介</h2>
 <p><img src="http://img5.douban.com/lpic/s27134708.jpg" alt="深入浅出Node.js"></p>
 <ul>
 <li><a href="http://book.douban.com/subject/25768396/">豆瓣主页</a>，简介、书评、购买链接请前往。</li>
 <li><a href="http://www.ituring.com.cn/book/1290">图灵主页</a>，预览章节，请前往。</li>
 </ul>
 <p>同名专栏请前往InfoQ浏览<a href="http://www.infoq.com/cn/master-nodejs">http://www.infoq.com/cn/master-nodejs</a></p>
-<h2>堪误</h2>
+<h2 id="-">堪误</h2>
 <ul>
-<li>序一。只有你爱好技术 -&gt; 只要你爱好技术</li>
+<li><del>序一。只有你爱好技术 -&gt; 只要你爱好技术</del></li>
 <li>6页，trunk -&gt; chunk</li>
-<li>30页的<code>binding.gyp</code>，<code>sources</code>的值应该是<code>src/hello.cc</code></li>
-<li>@吕耿敏 95页中间等价代码段中<code>fs.readFile(&quot;file1.txt&quot;)</code>嵌套中的<code>fs.readFile</code>应该是<code>file2.txt</code>，不是<code>file1.txt</code></li>
-<li>56页，tick图，左边还有连线</li>
-<li>84页，倒数第二行<code>err</code> -&gt; <code>data</code></li>
-<li>85页，<code>promise.resolve(result);</code> -&gt; <code>deferred.resolve(result);</code> <code>promise.reject(err);</code> -&gt; <code>deferred.reject(err);</code></li>
+<li><del>30页的<code>binding.gyp</code>，<code>sources</code>的值应该是<code>src/hello.cc</code></del></li>
+<li><del>56页，tick图，左边还有连线</del></li>
+<li><del>84页，倒数第二行<code>err</code> -&gt; <code>data</code></del></li>
+<li><del>85页，<code>promise.resolve(result);</code> -&gt; <code>deferred.resolve(result);</code> <code>promise.reject(err);</code> -&gt; <code>deferred.reject(err);</code></del></li>
+<li><del>@吕耿敏 95页中间等价代码段中<code>fs.readFile(&quot;file1.txt&quot;)</code>嵌套中的<code>fs.readFile</code>应该是<code>file2.txt</code>，不是<code>file1.txt</code></del></li>
+<li><del>122页，图5-9上的locol是错误的，应该是<code>local</code>。一共两处。</del></li>
 <li>126页，第一行，process.memoryUsage()写成momoryUsage了</li>
-<li>147页，取消掉。。。前的注释</li>
+<li><del>143页，<code>trunk</code> -&gt; <code>chunk</code></del></li>
+<li><del>147页，取消掉。。。前的注释</del></li>
 <li>165页，倒数第三行<code>var this = that;</code>应该改为<code>var that = this;</code></li>
-<li>317页，方法命名处，方法名尽量采用动词或判断性词汇 行 -&gt; 性</li>
-<li>122页，图5-9上的locol是错误的，应该是<code>local</code>。一共两处。</li>
-<li>143页，<code>trunk</code> -&gt; <code>chunk</code></li>
 <li>177页，Structs 应该是 Struts</li>
-<li>188页，<code>store.get(id, function(err, sesson){</code> 参数名错误 应为<code>session</code></li>
+<li><del>188页，<code>store.get(id, function(err, sesson){</code> 参数名错误 应为<code>session</code></del></li>
+<li>192页，浏览器在收到Etag: &quot;...&quot;这样的请求后 -&gt; 这样的响应后</li>
+<li>228、229页，代码中的<code>fs.join</code>应该为<code>path.join</code>。</li>
 <li>232页，最后一段中文文字，第二行：&quot;这里的文件名为bagpipe.js&quot;应该为&quot;这里的文件名为bigpipe.js&quot;。</li>
 <li>233页，<code>&lt;title&gt;Bagpipe示例&lt;/title&gt;</code>应该为<code>&lt;title&gt;Bigpipe示例&lt;/title&gt;</code></li>
-<li>228、229页，代码中的<code>fs.join</code>应该为<code>path.join</code>。</li>
+<li><del>317页，方法命名处，方法名尽量采用动词或判断性词汇 行 -&gt; 性</del></li>
 </ul>
-<h2>相关源码</h2>
+<p>带横线的为第三印中就修改的堪误</p>
+<h2 id="-">相关源码</h2>
 <p>请访问<a href="https://github.com/JacksonTian/diveintonode_examples">https://github.com/JacksonTian/diveintonode_examples</a>查看相关源码。</p>
 
       </section>
@@ -150,9 +151,8 @@
         });
         $(".content").find('h1, h2, h3, h4, h5, h6').each(function () {
           var node = $(this);
-          if (!node.attr("id")) {
-            node.attr("id", "index_" + node.text());
-          }
+          // 总是设置id
+          node.attr("id", "index_" + node.text());
           node.css("paddingTop", 50);
         });
       });
