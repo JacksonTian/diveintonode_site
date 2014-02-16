@@ -24,6 +24,7 @@
 - 165页，倒数第三行`var this = that;`应该改为`var that = this;`
 - 177页，Structs 应该是 Struts
 - ~~188页，`store.get(id, function(err, sesson){` 参数名错误 应为`session`~~
+- 192页，浏览器在收到Etag: "..."这样的请求后 -> 这样的响应后
 - 228、229页，代码中的`fs.join`应该为`path.join`。
 - 232页，最后一段中文文字，第二行："这里的文件名为bagpipe.js"应该为"这里的文件名为bigpipe.js"。
 - 233页，`<title>Bagpipe示例</title>`应该为`<title>Bigpipe示例</title>`
